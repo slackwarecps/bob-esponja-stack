@@ -1,9 +1,10 @@
-teste
-<!-- <mat-card>
+<p>Change this template ;P</p>
+
+<mat-card>
   <mat-toolbar color="primary">Cores Lista</mat-toolbar>
 
   <div *ngIf="municipios$ | async as cidade; else loading">
-    <mat-table [dataSource]="cores2" class="mat-elevation-z8">
+    <mat-table [dataSource]="cidade" class="mat-elevation-z8">
       <ng-container matColumnDef="id">
         <mat-header-cell *matHeaderCellDef>id</mat-header-cell>
         <mat-cell *matCellDef="let cidade">{{ cidade.id }}</mat-cell>
@@ -24,8 +25,4 @@ teste
       <mat-spinner></mat-spinner>
     </div>
   </ng-template>
-
-  <mat-spinner></mat-spinner>
-</mat-card> -->
-
-TESTE
+</mat-card>
