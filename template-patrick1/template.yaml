@@ -13,3 +13,4 @@ hooks:
     trigger: after-render
     commands:
       - "npm install"
+      - "ng add @angular/material --defaults  --skip-confirmation"
