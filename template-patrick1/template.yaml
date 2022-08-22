@@ -1,0 +1,15 @@
+name: template-patrick1
+description: Ser um template melhor amigo
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+
+hooks:
+  - type: run
+    trigger: after-render
+    commands:
+      - "npm install"

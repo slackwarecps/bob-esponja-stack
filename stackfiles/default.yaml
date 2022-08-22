@@ -1,0 +1,4 @@
+type: app
+description: Essa stack serve para criar uma aplicacao bob esponja
+# template used to create the project
+template: bob-esponja-stack/template-patrick1
