@@ -1,0 +1,28 @@
+name: plugin-ibge-municipios
+description: MOstrar os municipios brasileiros pela API do IBGE
+display-name: plugin-ibge-municipios
+picture: plugin.png
+category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
+compatibility:
+  - java
+  - spring
+  - angular
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
+  - "Api"
+types:
+  - app
+inputs:
+  - label: qual o nome do componente voce deseja criar?
+    type: text
+    name: componente_name
+    default: componentes/servico/ibge-service.ts
+  - label: Mostrar Qual Conjunto de municipios
+    type: multiselect
+    name: uf_selecionada
+    items:
+      - SP
+      - TODOS
