@@ -2,7 +2,7 @@
 <p>Change this template ;P</p>
 
 <mat-card>
-  <mat-toolbar color="primary">Cores Lista</mat-toolbar>
+  <mat-toolbar color="primary">Municipios pelo IBGE</mat-toolbar>
 
   <div *ngIf="municipios$ | async as cidade; else loading">
     <mat-table [dataSource]="cidade" class="mat-elevation-z8">

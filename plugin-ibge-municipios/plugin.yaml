@@ -16,13 +16,30 @@ technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/
 types:
   - app
 inputs:
-  - label: qual o nome do componente voce deseja criar?
-    type: text
-    name: componente_name
-    default: componentes/servico/ibge-service.ts
-  - label: Mostrar Qual Conjunto de municipios
-    type: multiselect
-    name: uf_selecionada
-    items:
-      - SP
-      - TODOS
+  # - label: Qual o nome do componente e da rota que voce deseja criar?
+  #   type: text
+  #   name: componente_name
+  #   default: cidade-lista
+  # - label: Mostrar Qual Conjunto de municipios
+  #   type: multiselect
+  #   name: uf_selecionada
+  #   items:
+  #     - SP
+  #     - TODOS
+hooks:
+  - type: edit
+    trigger: after-render
+    path: src/app/app-routing.module.ts
+    changes:
+      - search:
+          string: "const routes: Routes = [\n"
+          insert-before:
+            value: "import { FormCidadeComponent } from './form-cidade/form-cidade.component';\n"
+          when:
+            not-exists: "import { FormCidadeComponent } from './form-cidade/form-cidade.component';"            
+      - search:
+          string: "const routes: Routes = [\n"
+          insert-after:
+            value: "{ path: 'cidade-lista', component: FormCidadeComponent },\n"
+          when:
+            not-exists: "{ path: 'cidade-lista', component: FormCidadeComponent }"
