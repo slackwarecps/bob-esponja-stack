@@ -1,0 +1,3 @@
+[submodule "plugin-gary-mock-server"]
+	path = plugin-gary-mock-server
+	url = https://github.com/slackwarecps/plugin-gary-mock-server
