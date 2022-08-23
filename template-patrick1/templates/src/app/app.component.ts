@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'StacjkSpot Exemplo em Angular';
+  title = 'StackSpot Exemplo em Angular';
 }
