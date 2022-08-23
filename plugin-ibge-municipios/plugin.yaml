@@ -43,3 +43,20 @@ hooks:
             value: "{ path: 'cidade-lista', component: FormCidadeComponent },\n"
           when:
             not-exists: "{ path: 'cidade-lista', component: FormCidadeComponent }"
+
+  - type: edit
+    trigger: after-render
+    path: src/app/app.module.ts
+    changes:
+      - search:
+          string: "@NgModule({"
+          insert-before:
+            value: "import { FormCidadeComponent } from './form-cidade/form-cidade.component';\n"
+          when:
+            not-exists: "import { FormCidadeComponent } from './form-cidade/form-cidade.component';"            
+      - search:
+          string: "declarations: [AppComponent"
+          insert-after:
+            value: ",FormCidadeComponent,"
+          when:
+            not-exists: ",FormCidadeComponent,"
