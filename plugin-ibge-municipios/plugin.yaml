@@ -55,8 +55,8 @@ hooks:
           when:
             not-exists: "import { FormCidadeComponent } from './form-cidade/form-cidade.component';"            
       - search:
-          string: "declarations: [AppComponent"
-          insert-after:
-            value: ",FormCidadeComponent,"
+          string: "declarations: [AppComponent,"
+          replace-by:
+            value: "declarations: [AppComponent, FormCidadeComponent,"
           when:
-            not-exists: ",FormCidadeComponent,"
+            not-exists: "declarations: [AppComponent, FormCidadeComponent,"
