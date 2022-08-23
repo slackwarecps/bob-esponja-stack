@@ -1,0 +1,27 @@
+name: plugin-gary-mock
+description: Adiciona uma pasta com um mock server para nao depender de servidores online
+display-name: plugin-gary-mock
+picture: plugin.png
+category: backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
+compatibility:
+  - docker
+  - angular
+  - java
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
+  - "Api"
+types:
+  - app
+# inputs:
+#   - label: Login
+#     type: text
+#     name: login
+#   - label: Senha
+#     type: text
+#     name: senha   
+#   - label: String de conexao
+#     type: text
+#     name: string_conexao

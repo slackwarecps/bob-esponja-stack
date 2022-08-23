@@ -1,0 +1,97 @@
+[
+
+
+  {
+    "httpRequest": {
+      "path": "/api/v1/cores"
+    },
+    "httpResponse": {
+      "body":[
+        {
+            "id": 1,
+            "nome": "Amarelo"
+        },
+        {
+            "id": 4,
+            "nome": "Bege"
+        },
+        {
+            "id": 5,
+            "nome": "Branco"
+        },
+        {
+            "id": 7,
+            "nome": "Prata"
+        },
+        {
+            "id": 8,
+            "nome": "Preto"
+        },
+        {
+            "id": 9,
+            "nome": "Verde"
+        },
+        {
+            "id": 10,
+            "nome": "Vermelho"
+        },
+        {
+            "id": 11,
+            "nome": "Azul"
+        },
+        {
+            "id": 12,
+            "nome": "Cinza"
+        },
+        {
+            "id": 13,
+            "nome": "Dourado"
+        },
+        {
+            "id": 14,
+            "nome": "Marrom"
+        },
+        {
+            "id": 15,
+            "nome": "Vinho"
+        },
+        {
+            "id": 16,
+            "nome": "Roxo"
+        },
+        {
+            "id": 17,
+            "nome": "Laranja"
+        },
+        {
+            "id": 23,
+            "nome": "Várias cores"
+        },
+        {
+            "id": 24,
+            "nome": "Não informada."
+        },
+        {
+            "id": 25,
+            "nome": "Rosa"
+        },
+        {
+            "id": 26,
+            "nome": "Bronze"
+        }
+    ]
+    }
+  },
+
+  {
+    "httpRequest": {
+      "path": "/api/v1/quem-eh-o-batman"
+    },
+    "httpResponse": {
+      "body": "eh o Bruce wayne"
+    }
+  }
+
+  
+
+]
